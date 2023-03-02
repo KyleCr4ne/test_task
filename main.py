@@ -46,4 +46,4 @@ for pos in counts:
 with open("variants.vcf", "w") as f:
     f.write("Pos in ref\t|\tRef value\t|\tAlt value\t|\tCount\n")
     for variant in variants:
-        f.write(f"{variant[0]+25100000}\t\t\t\t\t{variant[1]}\t\t\t\t\t\t{variant[2]}\t\t\t\t{variant[3]}\n")
+        f.write(f"{variant[0]+start_pos}\t\t\t\t\t{variant[1]}\t\t\t\t\t\t{variant[2]}\t\t\t\t{variant[3]}\n")
