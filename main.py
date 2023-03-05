@@ -3,9 +3,9 @@
 import pysam
 from Bio import SeqIO
 # Инициализация файлов
-record = SeqIO.read("/content/drive/MyDrive/Colab Notebooks/referese.fasta", "fasta")
+record = SeqIO.read("referese.fasta", "fasta")
 ref_seq = str(record.seq)
-samfile = pysam.AlignmentFile("/content/drive/MyDrive/Colab Notebooks/input.sam", "r")
+samfile = pysam.AlignmentFile("input.sam", "r")
 # Инициализация словаря, значений
 start_pos = 25100000
 end_pos = 25200000
